@@ -116,7 +116,6 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   position: absolute;
-
   min-height: 6rem;
   width: 100%;
   display: flex;
@@ -138,13 +137,7 @@ main {
   cursor: pointer;
 }
 
-.share-box.active + button {
-  background-color: var(--desaturated-dark-blue);
-}
-
-.inactive {
-  visibility: hidden;
-}
+/* Desktop design */
 @media screen and (min-width: 62em) {
   .article-preview-component {
     display: flex;
@@ -205,7 +198,29 @@ main {
   }
 }
 
+/* Share box --- Active state */
 .share-box.active {
   opacity: 1;
   visibility: visible;
+}
+.share-box.active + button {
+  background-color: var(--desaturated-dark-blue);
+}
+
+/* Footer */
+.attribution {
+  align-self: center;
+  width: 100%;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution p {
+  margin: 0;
+}
+
+.attribution a {
+  color: rgb(75, 174, 192);
 }
